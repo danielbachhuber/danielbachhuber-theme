@@ -10,6 +10,18 @@
 			color: $orange;
 		}
 	}
+	.site-description {
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		color: $dark-grey;
+		font-size: .75rem;
+		@media #{$medium-up} {
+			font-size: 0.9rem;
+		}
+		a, a:hover {
+			color: inherit;
+		}
+	}
 	border-bottom: 1px solid $light-grey;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
