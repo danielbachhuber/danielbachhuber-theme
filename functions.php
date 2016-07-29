@@ -83,6 +83,7 @@ class DB {
 	private function setup_controllers() {
 		$controllers = array(
 			'\DB\Assets',
+			'\DB\Content_Model',
 		);
 		foreach( $controllers as $controller ) {
 			$controller::get_instance();

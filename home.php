@@ -12,7 +12,7 @@
 					
 					<div class="page-content">
 						
-						<p>Proud father of two, Principal at <a href="https://handbuilt.co">Hand Built</a>, maintainer of <a href="https://wp-cli.org/">WP-CLI</a>, and a prolific open source contributor.</p>
+						<p>Proud husband and father of two, Principal at <a href="https://handbuilt.co">Hand Built</a>, founder of <a href="https://runcommand.io">runcommand</a> and <a href="https://toothpress.com">ToothPress</a>, maintainer of <a href="https://wp-cli.org/">WP-CLI</a>, and a prolific open source contributor.</p>
 
 						<p><strong>Looking for technology leadership you can trust?</strong></p>
 						
