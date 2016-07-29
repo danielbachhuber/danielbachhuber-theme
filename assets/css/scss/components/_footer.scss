@@ -1,0 +1,23 @@
+.site-footer {
+	
+	.made-by {
+		color: $dark-grey;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+		@media #{$medium-up} {
+			padding-top: 2rem;
+		}
+		img {
+			height: .6rem;
+			vertical-align: middle;
+			margin-top: -0.2rem;
+		}
+		a {
+			color: inherit;
+			&:hover {
+				color: inherit;
+				text-decoration: underline;
+			}
+		}
+	}
+}

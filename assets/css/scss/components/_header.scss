@@ -1,0 +1,30 @@
+.site-header {
+	.site-title {
+		font-size: 1.5rem;
+		font-family: $header-font-family;
+		color: $dark-blue;
+		@media #{$medium-up} {
+			font-size: 2rem;
+		}
+		&:hover {
+			color: $dark-blue;
+		}
+	}
+	border-bottom: 1px solid $light-grey;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	@media #{$medium-up} {
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+	}
+
+	.social {
+		margin-left: 0.5rem;
+		a {
+			color: $medium-grey;
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+}
