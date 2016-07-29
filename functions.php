@@ -36,7 +36,7 @@ class DB {
 		});
 
 		add_filter( 'pre_option_blogdescription', function() {
-			return 'Technology leadership you can trust';
+			return 'Proud husband and father x2';
 		});
 
 		/**
