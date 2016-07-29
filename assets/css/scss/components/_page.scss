@@ -1,4 +1,23 @@
 .site-content {
-	padding-top: 2rem;
-	padding-bottom: 4rem;
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+}
+
+.page-header {
+	padding-bottom: 1rem;
+}
+
+.page-content {
+	a {
+		text-decoration: underline;
+	}
+}
+
+.home .page-header {
+	padding-top: 1.5rem;
+	padding-bottom: 1.25rem;
+	@media #{$medium-up} {
+		padding-top: 2.5rem;
+		padding-bottom: 2rem;
+	}
 }

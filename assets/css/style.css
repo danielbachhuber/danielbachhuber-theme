@@ -6098,14 +6098,14 @@ table {
   padding-top: .5rem;
   padding-bottom: .5rem; }
   .site-header .site-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "Roboto Slab", serif;
-    color: #36516C; }
+    color: #A8551B; }
     @media only screen and (min-width: 40.0625em) {
       .site-header .site-title {
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
     .site-header .site-title:hover {
-      color: #36516C; }
+      color: #A8551B; }
   @media only screen and (min-width: 40.0625em) {
     .site-header {
       padding-top: .75rem;
@@ -6116,6 +6116,24 @@ table {
       color: #ABABAB; }
       .site-header .social a:hover {
         color: inherit; }
+
+.site-content {
+  padding-top: 1rem;
+  padding-bottom: 3rem; }
+
+.page-header {
+  padding-bottom: 1rem; }
+
+.page-content a {
+  text-decoration: underline; }
+
+.home .page-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.25rem; }
+  @media only screen and (min-width: 40.0625em) {
+    .home .page-header {
+      padding-top: 2.5rem;
+      padding-bottom: 2rem; } }
 
 .site-footer .made-by {
   color: #888888;

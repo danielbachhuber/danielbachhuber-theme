@@ -1,13 +1,13 @@
 .site-header {
 	.site-title {
-		font-size: 1.5rem;
+		font-size: 1rem;
 		font-family: $header-font-family;
-		color: $dark-blue;
+		color: $orange;
 		@media #{$medium-up} {
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 		&:hover {
-			color: $dark-blue;
+			color: $orange;
 		}
 	}
 	border-bottom: 1px solid $light-grey;
