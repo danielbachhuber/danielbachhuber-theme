@@ -16,7 +16,7 @@
 
 						<p><strong>Looking for technology leadership you can trust?</strong></p>
 						
-						<p>My roots are WordPress and publishing, and I have experience with pretty much everything related to web development: React, Vagrant, Nginx, PHP, Python, Redis, Memcached, SCSS, SAML, YAML, devops, testing infrastructure, code review, product definition, etc. I'm uniquely qualified to match technologies to business needs.</p>
+						<p>My roots are WordPress and publishing, and I have experience with pretty much everything related to web development: React, Node, Vagrant, Nginx, PHP, Python, Redis, Memcached, SCSS, SAML, YAML, devops, testing infrastructure, code review, product definition, etc. I'm uniquely qualified to match technologies to business needs.</p>
 						
 						<p><strong>Want to connect?</strong></p>
 						
