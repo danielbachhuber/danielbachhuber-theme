@@ -17,6 +17,8 @@ class Content_Model extends Controller {
 		add_filter( 'msm_sitemap_entry_post_type', function() use ( $custom_post_types ) {
 			return array_merge( array( 'post', 'page' ), $custom_post_types );
 		});
+		
+		add_filter( 'comments_open', '__return_false' );
 
 		add_filter( 'register_post_type_args', function( $args, $post_type ) {
 			global $wp_rewrite;

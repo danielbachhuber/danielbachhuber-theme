@@ -17,6 +17,9 @@
 
 						<div class="page-content">
 							<?php the_content(); ?>
+							<?php if ( get_comments_number() ) {
+								comments_template();
+							} ?>
 						</div>
 
 					</article>
