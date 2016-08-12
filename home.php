@@ -22,6 +22,41 @@
 						
 						<p>I'm on <i class="fa fa-twitter"></i> <a href="https://twitter.com/danielbachhuber">Twitter</a>, <i class="fa fa-github"></i> <a href="https://github.com/danielbachhuber">Github</a> and <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/danielbachhuber">LinkedIn</a>. You can also email me at <a href="mailto:daniel@handbuilt.co">daniel@handbuilt.co</a></p>
 						
+						<p><strong>Curious as to what I've been up to?</strong></p>
+						
+						<?php
+							$feed_items = fetch_feed( 'https://handbuilt.co/feed/' );
+							$feed_items = is_wp_error( $feed_items ) ? array() : $feed_items->get_items( 0, 3 );
+						?>
+						<p>Check out the <a href="https://handbuilt.co/blog/">Hand Built blog</a> for profressional updates<?php echo $feed_items ? ':' : '.'; ?></p>
+
+						<?php if ( ! empty( $feed_items ) ) : ?>
+							<ul>
+								<?php foreach( $feed_items as $feed_item ) :
+									error_log( var_export( json_encode( $feed_item ), true ) );
+								?>
+									<li><a href="<?php echo esc_url( $feed_item->get_permalink() ); ?>"><?php echo $feed_item->get_title(); ?></a></li>
+								<?php endforeach; ?>
+							</ul>
+						<?php endif; ?>
+						
+						<?php
+							$feed_items = fetch_feed( 'https://danielbachhuber.com/feed/' );
+							$feed_items = is_wp_error( $feed_items ) ? array() : $feed_items->get_items( 0, 3 );
+						?>
+						
+						<p>Or, follow <a href="<?php echo home_url( 'blog/' ); ?>">my personal blog</a> for family adventures<?php echo $feed_items ? ':' : '.'; ?></p>
+						
+						<?php if ( ! empty( $feed_items ) ) : ?>
+							<ul>
+								<?php foreach( $feed_items as $feed_item ) :
+									error_log( var_export( json_encode( $feed_item ), true ) );
+								?>
+									<li><a href="<?php echo esc_url( $feed_item->get_permalink() ); ?>"><?php echo $feed_item->get_title(); ?></a></li>
+								<?php endforeach; ?>
+							</ul>
+						<?php endif; ?>
+						
 						<p>Thanks for taking the time to stop by.</p>
 						
 
