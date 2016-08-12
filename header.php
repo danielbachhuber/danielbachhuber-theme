@@ -14,6 +14,9 @@
 <meta name="theme-color" content="#ffffff">
 
 <?php wp_head(); ?>
+
+<?php echo DB::get_template_part( 'json-ld' ); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
