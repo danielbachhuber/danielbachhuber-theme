@@ -28,7 +28,7 @@
 							$feed_items = fetch_feed( 'https://handbuilt.co/feed/' );
 							$feed_items = is_wp_error( $feed_items ) ? array() : $feed_items->get_items( 0, 3 );
 						?>
-						<p>Check out the <a href="https://handbuilt.co/blog/">Hand Built blog</a> for profressional updates<?php echo $feed_items ? ':' : '.'; ?></p>
+						<p>Check out the <a href="https://handbuilt.co/blog/">Hand Built blog</a> for professional updates<?php echo $feed_items ? ':' : '.'; ?></p>
 
 						<?php if ( ! empty( $feed_items ) ) : ?>
 							<ul>
