@@ -28,6 +28,12 @@
 	font-size: .8rem;
 	a {
 		color: inherit;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.post-edit-link {
+		color: $medium-grey;
 	}
 }
 

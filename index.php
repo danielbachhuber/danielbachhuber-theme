@@ -16,9 +16,9 @@
 				<?php while( have_posts() ) {
 					the_post();
 					if ( in_array( get_post_format(), array( 'status', 'quote', 'aside' ), true ) ) {
-						echo DB::get_template_part( 'index/full' );
+						echo DB::get_template_part( 'content/short' );
 					} else {
-						echo DB::get_template_part( 'index/excerpt' );
+						echo DB::get_template_part( 'content/excerpt' );
 					}
 				} ?>
 

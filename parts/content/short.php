@@ -4,6 +4,6 @@
 		<?php the_content(); ?>
 	</div>
 
-	<?php echo DB::get_template_part( 'index/entry-meta' ); ?>
+	<?php echo DB::get_template_part( 'content/entry-meta' ); ?>
 
 </article>
