@@ -16,16 +16,15 @@
 }
 
 .format-aside {
-	.entry-content {
-		p {
-			font-size: 1.125rem;
-		}
-	}
+	padding: .75rem;
+	background-color: $white;
+	border: rem-calc(1) solid $light-grey;
+	border-radius: rem-calc(2);
 }
 
 .entry-meta {
 	color: $dark-grey;
-	font-size: .8rem;
+	font-size: .7rem;
 	a {
 		color: inherit;
 		&:hover {
