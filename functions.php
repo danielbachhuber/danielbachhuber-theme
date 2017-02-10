@@ -129,6 +129,8 @@ class DB {
 
 	/**
 	 * Get the current request URI
+	 *
+	 * @return string
 	 */
 	public static function get_request_uri() {
 		// Accommodate subdirectory installs
