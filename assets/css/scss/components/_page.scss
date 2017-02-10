@@ -15,7 +15,8 @@
 	}
 }
 
-.format-aside {
+.format-aside,
+.format-status {
 	padding: .75rem;
 	background-color: $white;
 	border: rem-calc(1) solid $light-grey;

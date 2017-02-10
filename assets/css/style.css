@@ -6143,7 +6143,8 @@ code {
 .entry-content a {
   text-decoration: underline; }
 
-.format-aside {
+.format-aside,
+.format-status {
   padding: .75rem;
   background-color: #FFFFFF;
   border: 0.0625rem solid #EEF4F6;
