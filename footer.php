@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="columns text-center">
 				<div class="made-by">
-					<small>Made in <img alt="Tualatin, Oregon" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/oregon.svg' ); ?>" /> &bull; <a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a> &bull; <a href="https://twitter.com/danielbachhuber"><i class="fa fa-twitter"></i> Twitter</a> &bull; <a href="https://www.linkedin.com/in/danielbachhuber"><i class="fa fa-linkedin"></i> LinkedIn</a></small>
+					<small>Made in <img alt="Tualatin, Oregon" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/oregon.svg' ); ?>" /> &bull; <a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a> &bull; <a href="https://tinyletter.com/danielbachhuber"><i class="fa fa-twitter"></i> TinyLetter</a> &bull; <a href="https://www.linkedin.com/in/danielbachhuber"><i class="fa fa-linkedin"></i> LinkedIn</a></small>
 				</div>
 			</div>
 		</div>
