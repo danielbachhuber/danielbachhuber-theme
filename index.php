@@ -9,11 +9,11 @@
 
 				<?php while( have_posts() ) {
 					the_post();
-					$index_entry = DB::get_template_part( 'index/' . get_post_format() );
-					if ( ! $index_entry ) {
-						$index_entry = DB::get_template_part( 'index/standard' );
+					if ( in_array( get_post_format(), array( 'status', 'quote', 'aside' ), true ) ) {
+						echo DB::get_template_part( 'index/full' );
+					} else {
+						echo DB::get_template_part( 'index/excerpt' );
 					}
-					echo $index_entry;
 				} ?>
 
 				<?php echo DB::get_template_part( 'pagination' ); ?>
