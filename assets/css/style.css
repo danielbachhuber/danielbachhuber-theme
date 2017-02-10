@@ -6141,6 +6141,18 @@ table {
 .format-aside .entry-content p {
   font-size: 1.125rem; }
 
+.entry-content .aligncenter {
+  margin: 0 auto;
+  display: block; }
+
+.entry-content .alignright {
+  float: right;
+  margin: 0 0 .75rem .75rem; }
+
+.entry-content .alignleft {
+  float: left;
+  margin: 0 .75rem .75rem 0; }
+
 .home .page-header {
   padding-top: 1.5rem;
   padding-bottom: 1.25rem; }

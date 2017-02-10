@@ -15,7 +15,7 @@
 							<h2><?php the_title(); ?><?php edit_post_link( ' <small><i class="fa fa-pencil"></i></small>' ); ?></h2>
 						</header>
 
-						<div class="page-content">
+						<div class="entry-content">
 							<?php the_content(); ?>
 							<?php if ( get_comments_number() ) {
 								comments_template();

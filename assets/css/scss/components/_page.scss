@@ -22,6 +22,21 @@
 	}
 }
 
+.entry-content {
+	.aligncenter {
+		margin: 0 auto;
+		display: block;
+	}
+	.alignright {
+		float: right;
+		margin: 0 0 .75rem .75rem;
+	}
+	.alignleft {
+		float: left;
+		margin: 0 .75rem .75rem 0;
+	}
+}
+
 .home .page-header {
 	padding-top: 1.5rem;
 	padding-bottom: 1.25rem;
