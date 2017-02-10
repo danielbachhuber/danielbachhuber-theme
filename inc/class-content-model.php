@@ -11,6 +11,7 @@ class Content_Model extends Controller {
 	protected function setup_actions() {
 		add_action( 'init', array( $this, 'action_init_register_post_types' ) );
 		add_action( 'init', array( $this, 'action_init_register_taxonomies' ) );
+		add_action( 'template_redirect', array( $this, 'action_template_redirect' ) );
 	}
 
 	protected function setup_filters() {
@@ -19,23 +20,7 @@ class Content_Model extends Controller {
 		add_filter( 'msm_sitemap_entry_post_type', function() use ( $custom_post_types ) {
 			return array_merge( array( 'post', 'page' ), $custom_post_types );
 		});
-		
 		add_filter( 'comments_open', '__return_false' );
-
-		add_filter( 'register_post_type_args', function( $args, $post_type ) {
-			global $wp_rewrite;
-			if ( 'post' === $post_type ) {
-				$archive_slug = 'blog';
-				$args['has_archive'] = $archive_slug;
-				$archive_slug = $wp_rewrite->root . $archive_slug;
-				add_rewrite_rule( "{$archive_slug}/?$", "index.php?post_type=$post_type", 'top' );
-				$feeds = '(' . trim( implode( '|', $wp_rewrite->feeds ) ) . ')';
-				add_rewrite_rule( "{$archive_slug}/feed/$feeds/?$", "index.php?post_type=$post_type" . '&feed=$matches[1]', 'top' );
-				add_rewrite_rule( "{$archive_slug}/$feeds/?$", "index.php?post_type=$post_type" . '&feed=$matches[1]', 'top' );
-				add_rewrite_rule( "{$archive_slug}/{$wp_rewrite->pagination_base}/([0-9]{1,})/?$", "index.php?post_type=$post_type" . '&paged=$matches[1]', 'top' );
-			}
-			return $args;
-		}, 10, 2 );
 
 	}
 
@@ -94,6 +79,17 @@ class Content_Model extends Controller {
 
 	public function action_init_register_shortcodes() {
 
+	}
+
+	public function action_template_redirect() {
+		global $wp;
+
+		// Redirect all /blog/ requests back to the homepage
+		if ( 0 === stripos( $wp->request, 'blog' ) ) {
+			$sub = str_replace( 'blog', '', $wp->request );
+			wp_safe_redirect( home_url( $sub ) );
+			exit;
+		}
 	}
 
 	public static function get_post_types() {

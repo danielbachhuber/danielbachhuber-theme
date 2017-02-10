@@ -12,8 +12,10 @@
 					<article <?php post_class(); ?>>
 
 						<header class="page-header">
-							<h2><?php the_title(); ?><?php edit_post_link( ' <small><i class="fa fa-pencil"></i></small>' ); ?></h2>
+							<h1><?php the_title(); ?><?php edit_post_link( ' <small><i class="fa fa-pencil"></i></small>' ); ?></h1>
 						</header>
+
+						<?php echo DB::get_template_part( 'index/entry-meta' ); ?>
 
 						<div class="entry-content">
 							<?php the_content(); ?>

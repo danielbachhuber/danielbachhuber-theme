@@ -6131,7 +6131,8 @@ table {
   padding-top: 1rem;
   padding-bottom: 3rem; }
 
-.page-header {
+.page-header,
+.entry-header {
   padding-bottom: 1rem; }
 
 .page-content a,
@@ -6140,6 +6141,12 @@ table {
 
 .format-aside .entry-content p {
   font-size: 1.125rem; }
+
+.entry-meta {
+  color: #888888;
+  font-size: .8rem; }
+  .entry-meta a {
+    color: inherit; }
 
 .entry-content .aligncenter {
   margin: 0 auto;
@@ -6161,13 +6168,16 @@ table {
       padding-top: 2.5rem;
       padding-bottom: 2rem; } }
 
+body.home article.post,
 body.archive article.post {
   margin-bottom: 1rem;
   margin-top: 1rem; }
   @media only screen and (min-width: 40.0625em) {
+    body.home article.post,
     body.archive article.post {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem; } }
+  body.home article.post:after,
   body.archive article.post:after {
     content: " ";
     height: 0.0625rem;

@@ -21,8 +21,6 @@
 
 <body <?php body_class(); ?>>
 
-	<?php if ( ! is_home() ) : ?>
-
 	<header class="site-header">
 		<div class="row">
 			<div class="columns medium-8 medium-centered">
@@ -31,6 +29,3 @@
 			</div>
 		</div>
 	</header>
-
-	<?php endif; ?>
-

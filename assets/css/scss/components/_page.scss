@@ -3,7 +3,8 @@
 	padding-bottom: 3rem;
 }
 
-.page-header {
+.page-header,
+.entry-header {
 	padding-bottom: 1rem;
 }
 
@@ -19,6 +20,14 @@
 		p {
 			font-size: 1.125rem;
 		}
+	}
+}
+
+.entry-meta {
+	color: $dark-grey;
+	font-size: .8rem;
+	a {
+		color: inherit;
 	}
 }
 
