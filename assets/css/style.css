@@ -6115,7 +6115,8 @@ table {
       .site-header .site-description {
         font-size: 0.9rem; } }
     .site-header .site-description a, .site-header .site-description a:hover {
-      color: inherit; }
+      color: inherit;
+      text-decoration: underline; }
   @media only screen and (min-width: 40.0625em) {
     .site-header {
       padding-top: .75rem;

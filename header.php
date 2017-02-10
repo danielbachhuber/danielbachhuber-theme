@@ -25,7 +25,7 @@
 		<div class="row">
 			<div class="columns medium-8 medium-centered">
 				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>">Daniel Bachhuber</a> <span class="social"><a href="https://twitter.com/danielbachhuber"><i class="fa fa-twitter"></i></a> <a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i></a></span>
-				<div class="site-description">Proud husband and father of two &bull; <a href="https://handbuilt.co">Hand Built</a> &bull; <a href="https://wp-cli.org/">WP-CLI</a></div>
+				<div class="site-description">Proud husband and father of two &bull; Principal, <a title="Technology leadership you can trust" href="https://handbuilt.co">Hand Built</a> &bull; Maintainer, <a title="The command line interface for WordPress" href="https://wp-cli.org/">WP-CLI</a></div>
 			</div>
 		</div>
 	</header>
