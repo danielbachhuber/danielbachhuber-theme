@@ -1,0 +1,17 @@
+body.archive {
+	article.post {
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+		@media #{$medium-up} {
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+		}
+		&:after {
+			content: " ";
+			height: rem-calc(1);
+			width: rem-calc(20);
+			background-color: $light-grey;
+			display: block;
+		}
+	}
+}

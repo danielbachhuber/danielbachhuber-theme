@@ -7,9 +7,18 @@
 	padding-bottom: 1rem;
 }
 
-.page-content {
+.page-content,
+.entry-content {
 	a {
 		text-decoration: underline;
+	}
+}
+
+.format-aside {
+	.entry-content {
+		p {
+			font-size: 1.125rem;
+		}
 	}
 }
 

@@ -6134,8 +6134,12 @@ table {
 .page-header {
   padding-bottom: 1rem; }
 
-.page-content a {
+.page-content a,
+.entry-content a {
   text-decoration: underline; }
+
+.format-aside .entry-content p {
+  font-size: 1.125rem; }
 
 .home .page-header {
   padding-top: 1.5rem;
@@ -6144,6 +6148,20 @@ table {
     .home .page-header {
       padding-top: 2.5rem;
       padding-bottom: 2rem; } }
+
+body.archive article.post {
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+  @media only screen and (min-width: 40.0625em) {
+    body.archive article.post {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem; } }
+  body.archive article.post:after {
+    content: " ";
+    height: 0.0625rem;
+    width: 1.25rem;
+    background-color: #EEF4F6;
+    display: block; }
 
 .page-comments .comment-list {
   margin-top: 1rem;
