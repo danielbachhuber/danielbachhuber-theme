@@ -3,9 +3,27 @@ body.archive {
 	article.post {
 		margin-bottom: 1rem;
 		margin-top: 1rem;
+		padding-top: .75rem;
+		padding-bottom: .75rem;
 		@media #{$medium-up} {
 			margin-top: 1.5rem;
 			margin-bottom: 1.5rem;
+		}
+		&.format-standard {
+			position: relative;
+			&:before {
+				content: " ";
+				display: block;
+				background-color: white;
+				width: 10000000px;
+				height: 100%;
+				position: absolute;
+				z-index: -1;
+				margin-left: -50%;
+				border-top: rem-calc(5) solid $light-grey;
+				top: 0;
+				border-bottom: rem-calc(1) solid $light-grey;
+			}
 		}
 	}
 }

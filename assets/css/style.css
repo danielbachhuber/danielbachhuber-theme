@@ -6199,12 +6199,30 @@ code {
 body.home article.post,
 body.archive article.post {
   margin-bottom: 1rem;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem; }
   @media only screen and (min-width: 40.0625em) {
     body.home article.post,
     body.archive article.post {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem; } }
+  body.home article.post.format-standard,
+  body.archive article.post.format-standard {
+    position: relative; }
+    body.home article.post.format-standard:before,
+    body.archive article.post.format-standard:before {
+      content: " ";
+      display: block;
+      background-color: white;
+      width: 10000000px;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      margin-left: -50%;
+      border-top: 0.3125rem solid #EEF4F6;
+      top: 0;
+      border-bottom: 0.0625rem solid #EEF4F6; }
 
 .page-comments .comment-list {
   margin-top: 1rem;
