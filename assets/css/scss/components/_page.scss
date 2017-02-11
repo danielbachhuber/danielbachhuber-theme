@@ -16,18 +16,23 @@
 }
 
 .format-aside,
-.format-status {
-	padding: .75rem;
-	background-color: $white;
+.format-status,
+.format-quote {
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	padding-left: .8rem;
+	padding-right: .8rem;
 	border: rem-calc(1) solid $light-grey;
 	border-radius: rem-calc(2);
 }
 
+.format-aside,
+.format-status {
+	background-color: $white;
+}
+
 .format-quote {
-	padding: .75rem;
 	background-color: $dark-blue;
-	border: rem-calc(1) solid $light-grey;
-	border-radius: rem-calc(2);
 	.entry-content > *,
 	.entry-content blockquote > * {
 		color: $white;

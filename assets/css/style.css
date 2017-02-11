@@ -6147,17 +6147,21 @@ code {
   text-decoration: underline; }
 
 .format-aside,
-.format-status {
-  padding: .75rem;
-  background-color: #FFFFFF;
+.format-status,
+.format-quote {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-left: .8rem;
+  padding-right: .8rem;
   border: 0.0625rem solid #EEF4F6;
   border-radius: 0.125rem; }
 
+.format-aside,
+.format-status {
+  background-color: #FFFFFF; }
+
 .format-quote {
-  padding: .75rem;
-  background-color: #36516C;
-  border: 0.0625rem solid #EEF4F6;
-  border-radius: 0.125rem; }
+  background-color: #36516C; }
   .format-quote .entry-content > *,
   .format-quote .entry-content blockquote > * {
     color: #FFFFFF; }
@@ -6201,18 +6205,25 @@ code {
 
 body.home article.post,
 body.archive article.post {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
   padding-top: .75rem;
   padding-bottom: .75rem; }
   @media only screen and (min-width: 40.0625em) {
     body.home article.post,
     body.archive article.post {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem; } }
+      margin-top: 1.75rem;
+      margin-bottom: 1.75rem; } }
   body.home article.post.format-standard,
   body.archive article.post.format-standard {
-    position: relative; }
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem; }
+    @media only screen and (min-width: 40.0625em) {
+      body.home article.post.format-standard,
+      body.archive article.post.format-standard {
+        padding-top: 1.5rem;
+        padding-bottom: 1.75rem; } }
     body.home article.post.format-standard:before,
     body.archive article.post.format-standard:before {
       content: " ";
