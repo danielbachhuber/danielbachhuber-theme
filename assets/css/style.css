@@ -6245,6 +6245,49 @@ body.archive article.post {
   .page-comments .comment-metadata a {
     color: #ABABAB; }
 
+ul.pagination {
+  border: 1px solid #EEF4F6;
+  display: inline-block;
+  margin-left: 0;
+  background-color: #FFFFFF; }
+  ul.pagination li {
+    color: #ABABAB;
+    height: auto;
+    border-left: 1px solid #EEF4F6;
+    border-right: 1px solid #EEF4F6;
+    background-color: #FFF; }
+    ul.pagination li:first-child {
+      border-left: none;
+      background-color: transparent; }
+    ul.pagination li:last-child {
+      border-right: none;
+      background-color: transparent; }
+    ul.pagination li .current {
+      color: #FFFFFF;
+      background-color: #36516C;
+      -webkit-transition: background-color 300ms ease-out;
+      transition: background-color 300ms ease-out;
+      display: block;
+      font-weight: normal;
+      padding: 0.0625rem 0.625rem 0.0625rem; }
+    ul.pagination li a {
+      color: #888888; }
+    ul.pagination li a, ul.pagination li button {
+      border-radius: 0; }
+    ul.pagination li a, ul.pagination li .page-numbers {
+      width: 2.125rem;
+      line-height: 1.875rem;
+      display: inline-block; }
+    ul.pagination li .prev,
+    ul.pagination li .next {
+      width: 2.3125rem; }
+    ul.pagination li:hover a,
+    ul.pagination li:hover button {
+      background: inherit; }
+    ul.pagination li a:focus,
+    ul.pagination li button:focus {
+      background: inherit; }
+
 .site-footer .made-by {
   color: #888888;
   padding-top: 1rem;

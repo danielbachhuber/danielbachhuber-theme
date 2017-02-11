@@ -5,8 +5,8 @@ $query = $GLOBALS['wp_query'];
 $base_link = str_replace( $bignum, '%#%', esc_url( get_pagenum_link( $bignum ) ) );
 $max_num_pages = $query->max_num_pages;
 $current_page = max( 1, $query->get( 'paged' ) );
-$prev_page_label = '&lsaquo; Previous';
-$next_page_label = 'Next &rsaquo;';
+$prev_page_label = '&lsaquo;';
+$next_page_label = '&rsaquo;';
 $args = array(
 	'base'          => $base_link,
 	'format'        => '',
@@ -37,11 +37,30 @@ if ( ! empty( $pagination_links ) ) {
 
 		echo '<div class="row">';
 
-		echo '<ul class="pagination columns">';
+		echo '<div class="columns">';
+
+		echo '<ul class="pagination">';
+		// Hide the last numbered link after dots, which core doesn't support hiding
+		// See https://core.trac.wordpress.org/ticket/39251
+		$total_dots = 0;
+		foreach( $pagination_links as $paginated_link ) {
+			if ( false !== stripos( $paginated_link, 'class="page-numbers dots"' ) ) {
+				$total_dots++;
+			}
+		}
+		$dots_shown = 0;
 		foreach ( $pagination_links as $paginated_link ) {
+			if ( $dots_shown >= $total_dots && false !== stripos( $paginated_link, "class='page-numbers'" ) ) {
+				continue;
+			}
 			echo '<li>' . $paginated_link . '</li>';
+			if ( false !== stripos( $paginated_link, 'class="page-numbers dots"' ) ) {
+				$dots_shown++;
+			}
 		}
 		echo '</ul>';
+
+		echo '</div>';
 
 		echo '</div>';
 

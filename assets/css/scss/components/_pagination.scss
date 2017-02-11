@@ -1,0 +1,54 @@
+ul.pagination {
+	border: 1px solid $light-grey;
+	display: inline-block;
+	margin-left: 0;
+	background-color: $white;
+	li {
+		color: $medium-grey;
+		height: auto;
+		border-left: 1px solid $light-grey;
+		border-right: 1px solid $light-grey;
+		background-color: #FFF;
+		&:first-child {
+			border-left: none;
+			background-color: transparent;
+		}
+		&:last-child {
+			border-right: none;
+			background-color: transparent;
+		}
+		.current {
+			color: $white;
+			background-color: $dark-blue;
+			@include single-transition(background-color);
+			display: block;
+			font-weight: normal;
+			padding: $pagination-link-pad;
+		}
+		a {
+			color: $dark-grey;
+		}
+		a, button {
+			border-radius: 0;
+		}
+		a, .page-numbers {
+			width: rem-calc(34);
+			line-height: rem-calc(30);
+			display: inline-block;
+		}
+		.prev,
+		.next {
+			width: rem-calc(37);
+		}
+		&:hover {
+			a,
+			button {
+				background: inherit;
+			}
+		}
+		a:focus,
+		button:focus {
+			background: inherit;
+		}
+	}
+}
