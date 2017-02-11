@@ -6150,6 +6150,22 @@ code {
   border: 0.0625rem solid #EEF4F6;
   border-radius: 0.125rem; }
 
+.format-quote {
+  padding: .75rem;
+  background-color: #36516C;
+  border: 0.0625rem solid #EEF4F6;
+  border-radius: 0.125rem; }
+  .format-quote .entry-content > *,
+  .format-quote .entry-content blockquote > * {
+    color: #FFFFFF; }
+    .format-quote .entry-content > * a,
+    .format-quote .entry-content blockquote > * a {
+      color: inherit; }
+  .format-quote .entry-meta {
+    color: #EEF4F6; }
+    .format-quote .entry-meta a {
+      color: inherit; }
+
 .entry-meta {
   color: #888888;
   font-size: .7rem; }
