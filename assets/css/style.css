@@ -6093,7 +6093,7 @@ table {
   overflow: visible;
   clip: auto; }
 
-body {
+.site-content {
   overflow-x: hidden; }
 
 code {
