@@ -26,7 +26,7 @@ class DB {
 			}
 		});
 		add_action( 'after_setup_theme', array( $this, 'action_after_setup_theme' ) );
-
+		add_action( 'pre_get_posts', array( 'DB\Query', 'action_pre_get_posts' ) );
 	}
 
 	private function setup_filters() {

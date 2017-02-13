@@ -1,6 +1,7 @@
 body.home,
 body.archive {
-	article.post {
+	article.post,
+	article.tip {
 		margin-bottom: 1.25rem;
 		margin-top: 1.25rem;
 		padding-top: .75rem;
@@ -30,6 +31,27 @@ body.archive {
 				top: 0;
 				border-bottom: rem-calc(1) solid $light-grey;
 			}
+		}
+	}
+	article.tip {
+		position: relative;
+		color: $light-grey;
+		a {
+			color: $light-grey;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&:before {
+			content: " ";
+			display: block;
+			background-color: $dark-blue;
+			width: 10000000px;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+			margin-left: -5000000px;
+			top: 0;
 		}
 	}
 }

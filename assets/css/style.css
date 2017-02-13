@@ -6204,28 +6204,38 @@ code {
       padding-bottom: 2rem; } }
 
 body.home article.post,
-body.archive article.post {
+body.home article.tip,
+body.archive article.post,
+body.archive article.tip {
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
   padding-top: .75rem;
   padding-bottom: .75rem; }
   @media only screen and (min-width: 40.0625em) {
     body.home article.post,
-    body.archive article.post {
+    body.home article.tip,
+    body.archive article.post,
+    body.archive article.tip {
       margin-top: 1.75rem;
       margin-bottom: 1.75rem; } }
   body.home article.post.format-standard,
-  body.archive article.post.format-standard {
+  body.home article.tip.format-standard,
+  body.archive article.post.format-standard,
+  body.archive article.tip.format-standard {
     position: relative;
     padding-top: 1rem;
     padding-bottom: 1.25rem; }
     @media only screen and (min-width: 40.0625em) {
       body.home article.post.format-standard,
-      body.archive article.post.format-standard {
+      body.home article.tip.format-standard,
+      body.archive article.post.format-standard,
+      body.archive article.tip.format-standard {
         padding-top: 1.5rem;
         padding-bottom: 1.75rem; } }
     body.home article.post.format-standard:before,
-    body.archive article.post.format-standard:before {
+    body.home article.tip.format-standard:before,
+    body.archive article.post.format-standard:before,
+    body.archive article.tip.format-standard:before {
       content: " ";
       display: block;
       background-color: white;
@@ -6237,6 +6247,28 @@ body.archive article.post {
       border-top: 0.3125rem solid #EEF4F6;
       top: 0;
       border-bottom: 0.0625rem solid #EEF4F6; }
+
+body.home article.tip,
+body.archive article.tip {
+  position: relative;
+  color: #EEF4F6; }
+  body.home article.tip a,
+  body.archive article.tip a {
+    color: #EEF4F6; }
+    body.home article.tip a:hover,
+    body.archive article.tip a:hover {
+      text-decoration: underline; }
+  body.home article.tip:before,
+  body.archive article.tip:before {
+    content: " ";
+    display: block;
+    background-color: #36516C;
+    width: 10000000px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-left: -5000000px;
+    top: 0; }
 
 .page-comments .comment-list {
   margin-top: 1rem;

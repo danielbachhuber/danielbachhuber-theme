@@ -18,7 +18,11 @@
 					if ( in_array( get_post_format(), array( 'status', 'quote', 'aside' ), true ) ) {
 						echo DB::get_template_part( 'content/short' );
 					} else {
-						echo DB::get_template_part( 'content/excerpt' );
+						if ( 'tip' === get_post_type() ) {
+							echo DB::get_template_part( 'content/tip' );
+						} else {
+							echo DB::get_template_part( 'content/excerpt' );
+						}
 					}
 				} ?>
 
