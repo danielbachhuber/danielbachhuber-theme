@@ -70,6 +70,7 @@ class Content_Model extends Controller {
 				'menu_name'           => $plural,
 			);
 			register_post_type( $post_type, $args );
+			register_taxonomy_for_object_type( 'post_tag', $post_type );
 		}
 	}
 
