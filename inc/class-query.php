@@ -9,7 +9,7 @@ class Query {
 			return;
 		}
 
-		if ( ! $query->is_singular() ) {
+		if ( ! $query->is_singular() && ! $query->is_post_type_archive() ) {
 			$query->set( 'post_type', array( 'post', 'tip' ) );
 		}
 	}
