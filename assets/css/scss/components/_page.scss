@@ -75,6 +75,9 @@
 		float: left;
 		margin: 0 .75rem .75rem 0;
 	}
+	pre {
+		margin-bottom: $paragraph-margin-bottom;
+	}
 }
 
 .home .page-header {
