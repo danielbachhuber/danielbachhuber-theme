@@ -96,7 +96,7 @@ class DB {
 
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
-		add_theme_support( 'post-formats', array( 'aside', 'status', 'quote', 'gallery' ) );
+		add_theme_support( 'post-formats', array( 'aside', 'status', 'quote', 'gallery', 'image' ) );
 		add_theme_support( 'html5' );
 
 		add_image_size( 'twitter-card', 560, 294, true );

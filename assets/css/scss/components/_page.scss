@@ -17,7 +17,8 @@
 
 .format-aside,
 .format-status,
-.format-quote {
+.format-quote,
+.format-image {
 	padding-top: .75rem;
 	padding-bottom: .75rem;
 	padding-left: .8rem;
@@ -27,7 +28,8 @@
 }
 
 .format-aside,
-.format-status {
+.format-status,
+.format-image {
 	background-color: $white;
 }
 

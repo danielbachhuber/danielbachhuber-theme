@@ -17,6 +17,8 @@
 					the_post();
 					if ( in_array( get_post_format(), array( 'status', 'quote', 'aside' ), true ) ) {
 						echo DB::get_template_part( 'content/short' );
+					} elseif ( 'image' === get_post_format() ) {
+						echo DB::get_template_part( 'content/full-index' );
 					} else {
 						if ( 'tip' === get_post_type() ) {
 							echo DB::get_template_part( 'content/tip' );

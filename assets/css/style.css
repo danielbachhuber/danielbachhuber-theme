@@ -6148,7 +6148,8 @@ code {
 
 .format-aside,
 .format-status,
-.format-quote {
+.format-quote,
+.format-image {
   padding-top: .75rem;
   padding-bottom: .75rem;
   padding-left: .8rem;
@@ -6157,7 +6158,8 @@ code {
   border-radius: 0.125rem; }
 
 .format-aside,
-.format-status {
+.format-status,
+.format-image {
   background-color: #FFFFFF; }
 
 .format-quote {
