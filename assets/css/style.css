@@ -6211,7 +6211,9 @@ code {
 body.home article.post,
 body.home article.tip,
 body.archive article.post,
-body.archive article.tip {
+body.archive article.tip,
+body.search article.post,
+body.search article.tip {
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
   padding-top: .75rem;
@@ -6220,13 +6222,17 @@ body.archive article.tip {
     body.home article.post,
     body.home article.tip,
     body.archive article.post,
-    body.archive article.tip {
+    body.archive article.tip,
+    body.search article.post,
+    body.search article.tip {
       margin-top: 1.75rem;
       margin-bottom: 1.75rem; } }
   body.home article.post.format-standard,
   body.home article.tip.format-standard,
   body.archive article.post.format-standard,
-  body.archive article.tip.format-standard {
+  body.archive article.tip.format-standard,
+  body.search article.post.format-standard,
+  body.search article.tip.format-standard {
     position: relative;
     padding-top: 1rem;
     padding-bottom: 1.25rem; }
@@ -6234,13 +6240,17 @@ body.archive article.tip {
       body.home article.post.format-standard,
       body.home article.tip.format-standard,
       body.archive article.post.format-standard,
-      body.archive article.tip.format-standard {
+      body.archive article.tip.format-standard,
+      body.search article.post.format-standard,
+      body.search article.tip.format-standard {
         padding-top: 1.5rem;
         padding-bottom: 1.75rem; } }
     body.home article.post.format-standard:before,
     body.home article.tip.format-standard:before,
     body.archive article.post.format-standard:before,
-    body.archive article.tip.format-standard:before {
+    body.archive article.tip.format-standard:before,
+    body.search article.post.format-standard:before,
+    body.search article.tip.format-standard:before {
       content: " ";
       display: block;
       background-color: white;
@@ -6254,17 +6264,21 @@ body.archive article.tip {
       border-bottom: 0.0625rem solid #EEF4F6; }
 
 body.home article.tip,
-body.archive article.tip {
+body.archive article.tip,
+body.search article.tip {
   position: relative;
   color: #EEF4F6; }
   body.home article.tip a,
-  body.archive article.tip a {
+  body.archive article.tip a,
+  body.search article.tip a {
     color: #EEF4F6; }
     body.home article.tip a:hover,
-    body.archive article.tip a:hover {
+    body.archive article.tip a:hover,
+    body.search article.tip a:hover {
       text-decoration: underline; }
   body.home article.tip:before,
-  body.archive article.tip:before {
+  body.archive article.tip:before,
+  body.search article.tip:before {
     content: " ";
     display: block;
     background-color: #36516C;
