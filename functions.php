@@ -56,8 +56,6 @@ class DB {
 
 	private function require_files() {
 
-		require_once __DIR__ . '/lib/msm-sitemap/msm-sitemap.php';
-
 		spl_autoload_register( function( $class ) {
 			$class = ltrim( $class, '\\' );
 			if ( 0 !== stripos( $class, 'DB\\' ) ) {
