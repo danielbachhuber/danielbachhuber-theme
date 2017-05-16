@@ -5,6 +5,7 @@
 	</header>
 
 	<div class="entry-content">
+		<?php echo DB::get_template_part( 'bylines-callout' ); ?>
 		<?php the_content(); ?>
 	</div>
 

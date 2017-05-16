@@ -7,6 +7,8 @@
 			<div class="row">
 				<div class="columns medium-8 medium-centered">
 
+					<?php echo DB::get_template_part( 'bylines-callout' ); ?>
+
 				<?php if ( is_tag() ) : ?>
 					<header class="page-header">
 						<h1><?php echo sprintf( 'Tagged: %s', get_queried_object()->name ); ?></h1>

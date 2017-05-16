@@ -6143,7 +6143,8 @@ code {
   padding-bottom: 1rem; }
 
 .page-content a,
-.entry-content a {
+.entry-content a,
+.callout a {
   text-decoration: underline; }
 
 .format-aside,
